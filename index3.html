@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metode Pembayaran</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="metode.css">
+</head>
+<link rel="icon" type="image/png" href="../img/logotab.png">
+<body class="bg-gray-100">
+
+<nav class="bg-blue-600 shadow-lg fixed w-full z-10">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <a href="index.html" class="flex items-center">
+                <img src="img/navimg.png" alt="Logo">
+            </a>
+            
+            <input type="checkbox" id="nav-toggle" class="hidden fixed top-4 left-4" checked="false">
+            <label for="nav-toggle" class="block md:hidden cursor-pointer">
+                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </label>
+            
+            <div class="hidden md:flex md:space-x-4">
+                <a href="index.html" class="text-white font-semibold hover:text-gray-200">Home</a>
+                <span class="text-white">|</span> 
+                <a href="index4.html" class="text-white font-semibold hover:text-gray-200">Promo</a> 
+                <span class="text-white">|</span> 
+                <a href="index2.html" class="text-white font-semibold hover:text-gray-200">Syarat & Ketentuan</a> 
+                <span class="text-white">|</span> 
+                <a href="index3.html" class="text-white font-semibold hover:text-gray-200">Metode Pembayaran</a> 
+        </div>
+    </div>
+    
+    <div class="md:hidden bg-blue-500">
+        <div class="max-w-7xl mx-auto px-4 py-2 nav-menu"> 
+            <a href="index.html" class="block text-white font-semibold hover:text-gray-200 py-2">Home</a> 
+            <a href="index4.html" class="block text-white font-semibold hover:text-gray-200 py-2">Promo</a> 
+            <a href="index2.html" class="block text-white font-semibold hover:text-gray-200 py-2">Syarat & Ketentuan</a> 
+            <a href="index3.html" class="block text-white font-semibold hover:text-gray-200 py-2">Metode Pembayaran</a> 
+        </div>
+    </div>
+</nav>
+
+<section class="relative pt-16">
+    
+    <div>
+        <img src="img/metode.jpg" alt="Iconnet Logo">
+    </div>   
+    <section id="metodePembayaran" class="container mx-auto my-8">
+        <div class="flex flex-wrap space-x-4">
+            <div class="flex flex-wrap space-x-4">
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(1)">
+                    <img src="img/Logo Alfamart.png" alt="Alfamart" class="h-10 w-auto mb-1">
+                    Alfamart
+                </button>
+                
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(2)">
+                    <img src="img/indomaret.png" alt="Indomart" class="h-10 w-auto mb-1">
+                    Indomart
+                </button>
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(3)">
+                    <img src="img/mandiri.png" alt="Mandiri" class="h-10 w-auto mb-1">
+                    Mandiri
+                </button>
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(4)">
+                    <img src="img/bri-logo-freelogovectors.net_.png" alt="BRI" class="h-10 w-auto mb-1">
+                    BRI
+                </button>
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(5)">
+                    <img src="img/bca.png" alt="BCA" class="h-10 w-auto mb-1">
+                    BCA
+                </button>
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(6)">
+                    <img src="img/bni.png" alt="BNI" class="h-10 w-auto mb-1">
+                    BNI
+                </button>
+                <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(7)">
+                    <img src="https://1.bp.blogspot.com/-Fv_9MEgQ7N0/YLn8yE2oX4I/AAAAAAAAFOE/CKK_VrEJfO07Un7Afa5S2PLA6k4SxPoIACLcBGAsYHQ/s1600/Logo%2BBank%2BSumsel%2BBabel.png" alt="SUMSEL BABEL" class="h-10 w-auto mb-1">
+                    SUMSEL BABEL
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+  
+</div>
+<div id="paymentMethodsContainer" class="mt-4">
+    <div id="paymentMethod1" class="payment-method hidden">
+        <div class="payment-card">
+            <h3>Pembayaran melalui Alfamart</h3>
+            <p>1. Datang di gerai Alfamart terdekat</p>
+            <p>2. Info kasir untuk pembayaran DOKU ICONNet</p>
+            <p>3. Info kasir NO Pembayaran, Contoh : 111113000000001</p>
+            <p>4. Pembayaran : sesuai dengan jumlah pemesanan</p>
+            <p>5. Transaksi Selesai</p>
+            <p>6. Simpan Struk Pembayaran</p>
+        </div>
+    </div>
+    <div id="paymentMethod2" class="payment-method hidden">
+        <div class="payment-card">
+            <h3>Pembayaran melalui Indomaret</h3>
+            <p>1. Datang ke gerai Indomaret terdekat</p>
+            <p>2. Info kasir untuk pembayaran Stroomnet</p>
+            <p>3. Info kasir kode indomaret 88267001 diikuti 8 digit Kode Pembayaran Contoh : 8826700110021136</p>
+            <p>4. Pembayaran sesuai dengan jumlah tagihan ditambah dengan biaya Rp 6.450,-</p>
+            <p>5. Transaksi Selesai</p>
+            <p>6. Simpan Struk Pembayarann</p>
+        </div>
+    </div>
+    <div id="paymentMethod3" class="payment-method hidden">
+        <div class="payment-card">
+            <h3>Pembayaran melalui mandiri atm</h3>
+            <p>1. Masukkan kartu ATM dan PIN</p>
+            <p>2. Pilih menu BAYAR/BELI</p>
+            <p>3. Pilih menu LAINNYA -> LAINNYA -> INTTV</p>
+            <p>4. Masukkan kode Perusahaan / Institusi , yaitu “89450” (ICONNET)</p>
+            <p>5. Masukkan NO VA, Contoh : 894500000001</p>
+            <p>6. KONFIRMASI : Tekan 1 kemudian tekan OK</p>
+            <p>7. Transaksi Selesai</p>
+            <p>8. Simpan Struk Pembayaran</p>
+        </div>
+        <div class="payment-card">
+            <h3>Pembayaran melalui mandiri online</h3>
+            <p>1. Buka aplikasi mandiri online di handphone atau PC</p>
+            <p>2. Masukkan user id dan pin di halaman log in</p>
+            <p>3. Pilih menu BAYAR -> BUAT PEMBAYARAN BARU</p>
+            <p>5. Pilih menu INTERNET -> ICONNET/89450</p>
+            <p>6. Pilih Rekening Sumber</p>
+            <p>7. Masukkan NO VA</p>
+            <p>8. Tekan Lanjut</p>
+            <p>9. Tekan KONFIRMASI</p>
+            <p>10. Masukkan MPIN Banking kemudian tekan OK</p>
+            <p>11. Transaksi Selesai</p>
+        </div>
+        <div class="payment-card">
+            <h3>Pembayaran melalui mandiri cabang</h3>
+            <p>1. Datang ke Cabang Bank Mandiri</p>
+            <p>2. Isi slip setoran atau pindah buku, Langkah Pengisian Aplikasi Setoran / Transfer</p>
+            <p>3. Isi Tanggal, Nama & Alamat Pembayar</p>
+            <p>4. Isi penerima dengan kode 89450</p>
+            <p>5. Isi No.Rekening dengan NO VA</p>
+            <p>7. Isi Jumlah Setoran & Terbilang</p>
+            <p>8. Isi Tujuan Transaksi. Misal: PEMBAYARAN XXXX</p>
+            <p>9. ntarkan slip setoran ke teller</p>
+            <p>10. Teller akan memproses & mencetak bukti pembayaran</p>
+        </div>
+        <div class="payment-card">
+            <h3>Pembayaran melalui MCM / MIB</h3>
+            <p>1. Buka aplikasi MCM / MIB</p>
+            <p>2. Masukkan company id, user id dan password</p>
+            <p>3. Pilih menu PEMBAYARAN -> PEMBAYARAN TAGIHAN</p>
+            <p>4. Pilih rekening debet</p>
+            <p>5. Pilih KATEGORI INSTITUSI (89450/ICONNET)</p>
+            <p>7. Masukkan NO VA</p>
+            <p>8. Tekan LANJUT -> KONFIRMASI</p>
+            <p>9. Approve transaksi dengan memasukkan pin dinamis token</p>
+            <p>10. Transaksi selesai</p>
+        </div>
+    </div>
+    <div id="paymentMethod4" class="payment-method hidden">
+        <div class="payment-card">
+            <h3>Pembayaran melalui ATM BRI</h3>
+            <p>1. Masukkan kartu ATM dan PIN</p>
+            <p>2. Pilih menu Transaksi Lain -> LAINNYA -> BRIVA</p>
+            <p>3. Masukkan Nomor Virtual Account , yaitu “1326891” (ICONNET)</p>
+            <p>4. Masukkan NO VA, Contoh : 1326891000000001</p>
+            <p>5. Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai Nomor BRIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
+            <p>6. KONFIRMASI : Tekan 1 kemudian tekan OK</p>
+            <p>7. Transaksi Selesai</p>
+            <p>8. Simpan Struk Pembayaran</p>
+        </div>
+        <div class="payment-card">
+            <h3>Pembayaran melalui Mobile Banking BRI</h3>
+            <p>1. Buka aplikasi BRI Mobile</p>
+            <p>2. Pilih menu Mobile Banking BRI -> PEMBAYARAN -> BRIVA</p>
+            <p>3. Masukkan Nomor Virtual Account</p>
+            <p>5. Masukkan Jumlah Pembayaran</p>
+            <p>6. Masukkan PIN</p>
+            <p>7. Transaksi SelesaiSimpan notifikasi SMS sebagai bukti pembayaran</p>
+        </div>
+        <div class="payment-card">
+            <h3>Pembayaran melalui Internet Banking BRI</h3>
+            <p>1. Login pada alamat Internet Banking BRI (https://ib.bri.co.id/ib-bri/Login.html)</p>
+            <p>2. Pilih menu Pembayaran Tagihan > Pembayaran > BRIVA</p>
+            <p>3. Masukkan Nomor Virtual Account</p>
+            <p>4. Di halaman konfirmasi, pastikan detil pembayaran sudah sesuai seperti Nomor BRIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
+            <p>5. Masukkan password dan mToken</p>
+            <p>7. Transaksi Selesai</p>
+            <p>8. Simpan Struk Pembayaran</p>
+        </div>
+    </div>
+    <div id="paymentMethod5" class="payment-method hidden">
+        <div class="payment-card">
+            <h3>Pembayaran melalui BCA Mobile</h3>
+            <p>1. Pilih menu m-BCA</p>
+            <p>2. Masukkan kode akses</p>
+            <p>3. Pilih menu m-transfer</p>
+            <p>4. Pilih BCA Virtual Account</p>
+            <p>5. Masukkan Nomor Virtual Account</p>
+            <p>6. Masukkan PIN m-BCA</p>
+            <p>7. Transaksi Selesai</p>
+            <p>8. Simpan Struk Pembayaran</p>
+        </div>    
+    </div>
+    <div id="paymentMethod6" class="payment-method hidden">
+        <div class="payment-card">
+            <h3>Pembayaran melalui ATM BNI</h3>
+            <p>1. Masukkan kartu ATM dan PIN</p>
+            <p>2. Pilih menu Transaksi Lain -> LAINNYA -> BNIVA</p>
+            <p>3. Masukkan Nomor Virtual Account , yaitu “3438691” (ICONNET)</p>
+            <p>4. Masukkan NO VA, Contoh : 3438691000000001</p>
+            <p>5. Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai Nomor BNIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
+            <p>7. Transaksi Selesai</p>
+            <p>8. Simpan Struk Pembayaran</p>
+        </div>
+        <div class="payment-card">
+            <h3>Pembayaran melalui Internet Banking BNI</h3>
+            <p>1. Login pada alamat Internet Banking BNI (https://ibank.bni.co.id)</p>
+            <p>2. Pilih menu Transfer > Virtual Account Billing > BNIVA</p>
+            <p>3. Masukkan Nomor Virtual Account</p>
+            <p>4. Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai seperti Nomor BNIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
+            <p>5. Masukkan password dan mToken</p>
+            <p>7. Transaksi Selesai</p>
+            <p>8. Simpan Struk Pembayaran</p>
+        </div> 
+        <div class="payment-card">
+            <h3>Pembayaran melalui Mobile Banking BNI</h3>
+            <p>1. Buka aplikasi BNI Mobile</p>
+            <p>2. Pilih menu Transfer -> Virtual Account Billing -> BNIVA</p>
+            <p>3. Masukkan Nomor Virtual Account</p>
+            <p>4. Masukkan PIN</p>
+            <p>5. Transaksi Selesai, Simpan notifikasi SMS sebagai bukti pembayarann</p>
+        </div>     
+    </div>  
+    <div id="paymentMethod7" class="payment-method hidden">
+        <div class="payment-card">
+           <H3> Pembayaran melalui BSB Mobile</H3>
+           <P>1. Login</P>
+           <P>2. Pilih tab transaksi dan menu Virtual Account</P>
+           <P>3. Pilih rekening tabungan yang akan didebet</P>
+           <P>4. Masukkan nomor VA/ID Pelanggan (disertai kode provider)</P>
+           <P>5. Pastikan tagihan dan keterangan sesuai</P>
+           <P>6. Masukkan otp dan pin</P>
+           <P>7. Transaksi selesai</P>
+           <div class="payment-card">
+           <H3>Pembayaran melalui Internet Banking</H3>
+           <P>1. Login</P>
+           <P>2. Transfer</P>
+           <P>3. Pilih virtual Account</P>
+           <P>4. Masukkan nomor VA/ ID Pelanggan (disertai kode provider)</P>
+           <P>5. Pastikan tagihan dan keterangan sesuai</P>
+           <P>6. Masukkan otp dan mpin</P>
+           <P>7. Selesai.</P>
+           <div class="payment-card">
+            <H3>Pembayaran melalui ATM</H3>
+            <P>1. Login</P>
+            <P>2. Pilih lainnya</P>
+            <P>3. Transfer</P>
+            <P>4. Ke Virtual Account</P>
+            <P>5. Pilih jenis rekening</P>
+            <P>6. Masukkan nomor VA/ ID Pelanggan (disertai kode provider)</P>
+            <p>7. Pastikan tagihan dan keterangan sesuai</p>
+            <P>8. Selesai</P>
+
+        </div>    
+    </div>    
+</div>
+</section>
+
+<div class="md:flex md:justify-center md:space-x-4 mt-20">
+    <a href="index.html" class="text-black-500 font-semibold hover:text-gray-600">Home</a> 
+    <span class="text-black-500">|</span> 
+    <a href="index4.html" class="text-black-500 font-semibold hover:text-gray-600">Promo</a> 
+    <span class="text-black-500">|</span>
+    <a href="index2.html" class="text-black-500 font-semibold hover:text-gray-600">Syarat & Ketentuan</a> 
+    <span class="text-black-500">|</span> 
+    <a href="index3.html" class="text-black-500 font-semibold hover:text-gray-600">Metode Pembayaran</a> 
+</div>
+
+
+<footer class="bg-gray-800 text-white py-4 mt-10">
+    <div class="container mx-auto flex flex-col items-center justify-center">
+        <img src="img/navimg.png" alt="Logo" class="w-20 mb-2">
+        <p class="text-sm">iconnet.babel.co.id</p>
+    </div>
+</footer>
+
+<script src="metode.js"></script>
+
+</body>
+</html>

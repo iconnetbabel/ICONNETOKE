@@ -29,3 +29,7 @@
         display: block; /* Tampilkan metode pembayaran yang dipilih */
     }
 }
+.payment-card h3 {
+    color: navy;
+    font-weight: bold;
+}
