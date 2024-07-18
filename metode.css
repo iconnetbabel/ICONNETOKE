@@ -1,0 +1,31 @@
+/* Gaya default untuk metode pembayaran */
+.payment-method {
+    display: none; /* Sembunyikan semua metode pembayaran secara default */
+}
+
+/* Gaya untuk menampilkan metode pembayaran */
+.payment-method.active {
+    display: block; /* Tampilkan metode pembayaran yang dipilih */
+}
+
+/* Media query untuk perangkat dengan lebar max 768px (tablet dan mobile) */
+@media (max-width: 768px) {
+    .payment-method {
+        display: none; /* Sembunyikan semua metode pembayaran secara default */
+    }
+
+    .payment-method.active {
+        display: block; /* Tampilkan metode pembayaran yang dipilih */
+    }
+}
+
+/* Media query untuk perangkat dengan lebar lebih dari 768px (desktop) */
+@media (min-width: 769px) {
+    .payment-method {
+        display: none; /* Sembunyikan semua metode pembayaran secara default */
+    }
+
+    .payment-method.active {
+        display: block; /* Tampilkan metode pembayaran yang dipilih */
+    }
+}

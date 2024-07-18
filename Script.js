@@ -8,7 +8,7 @@ const toggleIcon = document.querySelector('label[for="nav-toggle"] svg');
 // Tambahkan event listener untuk memantau klik pada tombol toggle
 toggleButton.addEventListener('click', function() {
     // Toggle tampilan menu
-    if (menu.style.maxHeight === '0px') {
+    if (menu.style.maxHeight === '0px' || menu.style.maxHeight === '') {
         menu.style.maxHeight = menu.scrollHeight + 'px'; // Set max-height sesuai dengan tinggi konten
         // Ubah ikon menjadi close saat menu ditampilkan
         toggleIcon.innerHTML = `
@@ -23,13 +23,28 @@ toggleButton.addEventListener('click', function() {
     }
 });
 
+window.addEventListener('resize', function() {
+    // Reset style untuk menyesuaikan tampilan di desktop
+    if (window.innerWidth > 768) {
+        menu.style.maxHeight = 'none'; // Biarkan menu tampil penuh
+    } else {
+        menu.style.maxHeight = '0px'; // Sembunyikan menu saat resize ke ukuran kecil
+    }
+});
 
 window.addEventListener('scroll', function() {
-        var button = document.getElementById('hubungi-kami');
-        // Tampilkan tombol saat menggulir ke bawah lebih dari 400px dari bagian atas
-        if (window.scrollY > 400) {
-            button.style.right = '5px'; // Tombol muncul dari kanan halaman
-        } else {
-            button.style.right = '-150px'; // Tombol kembali disembunyikan di luar layar kanan
-        }
-    });
+    var button = document.getElementById('hubungi-kami');
+    // Tampilkan tombol saat menggulir ke bawah lebih dari 400px dari bagian atas
+    if (window.scrollY > 400) {
+        button.style.right = '5px'; // Tombol muncul dari kanan halaman
+    } else {
+        button.style.right = '-150px'; // Tombol kembali disembunyikan di luar layar kanan
+    }
+});
+
+// Inisialisasi
+if (window.innerWidth > 768) {
+    menu.style.maxHeight = 'none'; // Biarkan menu tampil penuh di desktop saat pertama kali dimuat
+} else {
+    menu.style.maxHeight = '0px'; // Sembunyikan menu di mobile saat pertama kali dimuat
+}
