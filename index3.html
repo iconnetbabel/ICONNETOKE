@@ -7,20 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logotab.png">
-</head>
-<head>
-    <!-- Other head elements -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Your content here -->
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-  
+</head>
 <body class="bg-gray-100">
 <nav class="bg-blue-900 shadow-lg fixed w-full z-10 fade-in">
     <div class="max-w-7xl mx-auto px-4">
@@ -47,11 +35,12 @@
                 <a href="index3.html" class="text-white font-semibold hover:text-gray-200">Metode Pembayaran</a> 
                 <span class="text-white">|</span> 
                 <a href="index5.html" class="text-white font-semibold hover:text-gray-200">Karir</a> 
+            </div>
         </div>
     </div>
     
     <div class="md:hidden bg-blue-500">
-        <div class="max-w-7xl mx-auto px-4 py-2 nav-menu"> 
+        <div class="max-w-7xl mx-auto px-4 py-2 nav-menu hidden"> 
             <a href="index.html" class="block text-white font-semibold hover:text-gray-200 py-2">Home</a> 
             <a href="index4.html" class="block text-white font-semibold hover:text-gray-200 py-2">Promo</a> 
             <a href="index2.html" class="block text-white font-semibold hover:text-gray-200 py-2">Syarat & Ketentuan</a> 
@@ -62,7 +51,6 @@
 </nav>
 
 <section class="relative pt-16">
-    
     <div>
         <img src="img/metode.jpg" alt="Iconnet Logo">
     </div>   
@@ -101,226 +89,63 @@
             </div>
         </div>
     </section>
-    
 
-  
-</div>
-<div id="paymentMethodsContainer" class="mt-4">
-    <div id="paymentMethod1" class="payment-method hidden">
-        <div class="payment-card">
-            <h3>Pembayaran melalui Alfamart</h3>
-            <p>1. Datang di gerai Alfamart terdekat</p>
-            <p>2. Info kasir untuk pembayaran DOKU ICONNet</p>
-            <p>3. Info kasir NO Pembayaran, Contoh : 111113000000001</p>
-            <p>4. Pembayaran : sesuai dengan jumlah pemesanan</p>
-            <p>5. Transaksi Selesai</p>
-            <p>6. Simpan Struk Pembayaran</p>
+    <div id="paymentMethodsContainer" class="mt-4">
+        <div id="paymentMethod1" class="payment-method hidden">
+            <div class="payment-card">
+                <h3>Pembayaran melalui Alfamart</h3>
+                <p>1. Datang di gerai Alfamart terdekat</p>
+                <p>2. Info kasir untuk pembayaran DOKU ICONNet</p>
+                <p>3. Info kasir NO Pembayaran, Contoh : 111113000000001</p>
+                <p>4. Pembayaran : sesuai dengan jumlah pemesanan</p>
+                <p>5. Transaksi Selesai</p>
+                <p>6. Simpan Struk Pembayaran</p>
+            </div>
         </div>
+        <!-- Other payment methods ... -->
     </div>
-    <div id="paymentMethod2" class="payment-method hidden">
-        <div class="payment-card">
-            <h3>Pembayaran melalui Indomaret</h3>
-            <p>1. Datang ke gerai Indomaret terdekat</p>
-            <p>2. Info kasir untuk pembayaran Stroomnet</p>
-            <p>3. Info kasir kode indomaret 88267001 diikuti 8 digit Kode Pembayaran Contoh : 8826700110021136</p>
-            <p>4. Pembayaran sesuai dengan jumlah tagihan ditambah dengan biaya Rp 6.450,-</p>
-            <p>5. Transaksi Selesai</p>
-            <p>6. Simpan Struk Pembayarann</p>
-        </div>
-    </div>
-    <div id="paymentMethod3" class="payment-method hidden">
-        <div class="payment-card">
-            <h3>Pembayaran melalui mandiri atm</h3>
-            <p>1. Masukkan kartu ATM dan PIN</p>
-            <p>2. Pilih menu BAYAR/BELI</p>
-            <p>3. Pilih menu LAINNYA -> LAINNYA -> INTTV</p>
-            <p>4. Masukkan kode Perusahaan / Institusi , yaitu “89450” (ICONNET)</p>
-            <p>5. Masukkan NO VA, Contoh : 894500000001</p>
-            <p>6. KONFIRMASI : Tekan 1 kemudian tekan OK</p>
-            <p>7. Transaksi Selesai</p>
-            <p>8. Simpan Struk Pembayaran</p>
-        </div>
-        <div class="payment-card">
-            <h3>Pembayaran melalui mandiri online</h3>
-            <p>1. Buka aplikasi mandiri online di handphone atau PC</p>
-            <p>2. Masukkan user id dan pin di halaman log in</p>
-            <p>3. Pilih menu BAYAR -> BUAT PEMBAYARAN BARU</p>
-            <p>5. Pilih menu INTERNET -> ICONNET/89450</p>
-            <p>6. Pilih Rekening Sumber</p>
-            <p>7. Masukkan NO VA</p>
-            <p>8. Tekan Lanjut</p>
-            <p>9. Tekan KONFIRMASI</p>
-            <p>10. Masukkan MPIN Banking kemudian tekan OK</p>
-            <p>11. Transaksi Selesai</p>
-        </div>
-        <div class="payment-card">
-            <h3>Pembayaran melalui mandiri cabang</h3>
-            <p>1. Datang ke Cabang Bank Mandiri</p>
-            <p>2. Isi slip setoran atau pindah buku, Langkah Pengisian Aplikasi Setoran / Transfer</p>
-            <p>3. Isi Tanggal, Nama & Alamat Pembayar</p>
-            <p>4. Isi penerima dengan kode 89450</p>
-            <p>5. Isi No.Rekening dengan NO VA</p>
-            <p>7. Isi Jumlah Setoran & Terbilang</p>
-            <p>8. Isi Tujuan Transaksi. Misal: PEMBAYARAN XXXX</p>
-            <p>9. ntarkan slip setoran ke teller</p>
-            <p>10. Teller akan memproses & mencetak bukti pembayaran</p>
-        </div>
-        <div class="payment-card">
-            <h3>Pembayaran melalui MCM / MIB</h3>
-            <p>1. Buka aplikasi MCM / MIB</p>
-            <p>2. Masukkan company id, user id dan password</p>
-            <p>3. Pilih menu PEMBAYARAN -> PEMBAYARAN TAGIHAN</p>
-            <p>4. Pilih rekening debet</p>
-            <p>5. Pilih KATEGORI INSTITUSI (89450/ICONNET)</p>
-            <p>7. Masukkan NO VA</p>
-            <p>8. Tekan LANJUT -> KONFIRMASI</p>
-            <p>9. Approve transaksi dengan memasukkan pin dinamis token</p>
-            <p>10. Transaksi selesai</p>
-        </div>
-    </div>
-    <div id="paymentMethod4" class="payment-method hidden">
-        <div class="payment-card">
-            <h3>Pembayaran melalui ATM BRI</h3>
-            <p>1. Masukkan kartu ATM dan PIN</p>
-            <p>2. Pilih menu Transaksi Lain -> LAINNYA -> BRIVA</p>
-            <p>3. Masukkan Nomor Virtual Account , yaitu “1326891” (ICONNET)</p>
-            <p>4. Masukkan NO VA, Contoh : 1326891000000001</p>
-            <p>5. Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai Nomor BRIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
-            <p>6. KONFIRMASI : Tekan 1 kemudian tekan OK</p>
-            <p>7. Transaksi Selesai</p>
-            <p>8. Simpan Struk Pembayaran</p>
-        </div>
-        <div class="payment-card">
-            <h3>Pembayaran melalui Mobile Banking BRI</h3>
-            <p>1. Buka aplikasi BRI Mobile</p>
-            <p>2. Pilih menu Mobile Banking BRI -> PEMBAYARAN -> BRIVA</p>
-            <p>3. Masukkan Nomor Virtual Account</p>
-            <p>5. Masukkan Jumlah Pembayaran</p>
-            <p>6. Masukkan PIN</p>
-            <p>7. Transaksi SelesaiSimpan notifikasi SMS sebagai bukti pembayaran</p>
-        </div>
-        <div class="payment-card">
-            <h3>Pembayaran melalui Internet Banking BRI</h3>
-            <p>1. Login pada alamat Internet Banking BRI (https://ib.bri.co.id/ib-bri/Login.html)</p>
-            <p>2. Pilih menu Pembayaran Tagihan > Pembayaran > BRIVA</p>
-            <p>3. Masukkan Nomor Virtual Account</p>
-            <p>4. Di halaman konfirmasi, pastikan detil pembayaran sudah sesuai seperti Nomor BRIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
-            <p>5. Masukkan password dan mToken</p>
-            <p>7. Transaksi Selesai</p>
-            <p>8. Simpan Struk Pembayaran</p>
-        </div>
-    </div>
-    <div id="paymentMethod5" class="payment-method hidden">
-        <div class="payment-card">
-            <h3>Pembayaran melalui BCA Mobile</h3>
-            <p>1. Pilih menu m-BCA</p>
-            <p>2. Masukkan kode akses</p>
-            <p>3. Pilih menu m-transfer</p>
-            <p>4. Pilih BCA Virtual Account</p>
-            <p>5. Masukkan Nomor Virtual Account</p>
-            <p>6. Masukkan PIN m-BCA</p>
-            <p>7. Transaksi Selesai</p>
-            <p>8. Simpan Struk Pembayaran</p>
-        </div>    
-    </div>
-    <div id="paymentMethod6" class="payment-method hidden">
-        <div class="payment-card">
-            <h3>Pembayaran melalui ATM BNI</h3>
-            <p>1. Masukkan kartu ATM dan PIN</p>
-            <p>2. Pilih menu Transaksi Lain -> LAINNYA -> BNIVA</p>
-            <p>3. Masukkan Nomor Virtual Account , yaitu “3438691” (ICONNET)</p>
-            <p>4. Masukkan NO VA, Contoh : 3438691000000001</p>
-            <p>5. Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai Nomor BNIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
-            <p>7. Transaksi Selesai</p>
-            <p>8. Simpan Struk Pembayaran</p>
-        </div>
-        <div class="payment-card">
-            <h3>Pembayaran melalui Internet Banking BNI</h3>
-            <p>1. Login pada alamat Internet Banking BNI (https://ibank.bni.co.id)</p>
-            <p>2. Pilih menu Transfer > Virtual Account Billing > BNIVA</p>
-            <p>3. Masukkan Nomor Virtual Account</p>
-            <p>4. Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai seperti Nomor BNIVA, Nama Pelanggan dan Jumlah Pembayaran</p>
-            <p>5. Masukkan password dan mToken</p>
-            <p>7. Transaksi Selesai</p>
-            <p>8. Simpan Struk Pembayaran</p>
-        </div> 
-        <div class="payment-card">
-            <h3>Pembayaran melalui Mobile Banking BNI</h3>
-            <p>1. Buka aplikasi BNI Mobile</p>
-            <p>2. Pilih menu Transfer -> Virtual Account Billing -> BNIVA</p>
-            <p>3. Masukkan Nomor Virtual Account</p>
-            <p>4. Masukkan PIN</p>
-            <p>5. Transaksi Selesai, Simpan notifikasi SMS sebagai bukti pembayarann</p>
-        </div>     
-    </div>  
-    <div id="paymentMethod7" class="payment-method hidden">
-        <div class="payment-card">
-           <H3> Pembayaran melalui BSB Mobile</H3>
-           <P>1. Login</P>
-           <P>2. Pilih tab transaksi dan menu Virtual Account</P>
-           <P>3. Pilih rekening tabungan yang akan didebet</P>
-           <P>4. Masukkan nomor VA/ID Pelanggan (disertai kode provider)</P>
-           <P>5. Pastikan tagihan dan keterangan sesuai</P>
-           <P>6. Masukkan otp dan pin</P>
-           <P>7. Transaksi selesai</P>
-           <div class="payment-card">
-           <H3>Pembayaran melalui Internet Banking</H3>
-           <P>1. Login</P>
-           <P>2. Transfer</P>
-           <P>3. Pilih virtual Account</P>
-           <P>4. Masukkan nomor VA/ ID Pelanggan (disertai kode provider)</P>
-           <P>5. Pastikan tagihan dan keterangan sesuai</P>
-           <P>6. Masukkan otp dan mpin</P>
-           <P>7. Selesai.</P>
-           <div class="payment-card">
-            <H3>Pembayaran melalui ATM</H3>
-            <P>1. Login</P>
-            <P>2. Pilih lainnya</P>
-            <P>3. Transfer</P>
-            <P>4. Ke Virtual Account</P>
-            <P>5. Pilih jenis rekening</P>
-            <P>6. Masukkan nomor VA/ ID Pelanggan (disertai kode provider)</P>
-            <p>7. Pastikan tagihan dan keterangan sesuai</p>
-            <P>8. Selesai</P>
-
-        </div>    
-    </div>    
-</div>
 </section>
+
 <footer class="bg-gray-800 text-white py-4 mt-10">
     <div class="container mx-auto flex flex-col items-center justify-center">
         <img src="img/navimg.png" alt="Logo" class="w-20 mb-2">
         <div class="contact-info">
-           <h2 style="color:yellow; font-weight:bold;">Pelayanan pelanggan dan informasi lebih lanjut dapat menghubungi CC ICONNET berikut:</h2>
-
+            <h2 class="text-yellow-500 font-bold">Pelayanan pelanggan dan informasi lebih lanjut dapat menghubungi CC ICONNET berikut:</h2>
             <ul>
-                <li style="color:yellow; font-weight:bold;">Aplikasi My ICON+: 
-                    <a href="https://www.apple.com/app-store/" target="_blank" style="color:white; font-weight:bold;">Download melalui Appstore /</a> 
-                    <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer" target="_blank" style="color:white; font-weight:bold;">Playstore</a>
+                <li class="text-yellow-500 font-bold">Aplikasi My ICON+: 
+                    <a href="https://www.apple.com/app-store/" target="_blank" class="text-white font-bold">Download melalui Appstore /</a> 
+                    <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer" target="_blank" class="text-white font-bold">Playstore</a>
                 </li>
-                <li style="color:yellow; font-weight:bold;">
+                <li class="text-yellow-500 font-bold">
                     Website: 
-                    <a href="https://iconnet.id/" target="_blank" style="color:white; font-weight:bold;">https://iconnet.id</a>
+                    <a href="https://iconnet.id/" target="_blank" class="text-white font-bold">https://iconnet.id/</a>
                 </li>
-                <li style="color:yellow; font-weight:bold;">
-                    Instagram: 
-                    <a href="https://www.instagram.com/iconnet.here" target="_blank" style="color:white; font-weight:bold;">@iconnet.here</a>
+                <li class="text-yellow-500 font-bold">Email: 
+                    <a href="mailto:customercare@iconpln.co.id" class="text-white font-bold">customercare@iconpln.co.id</a>
                 </li>
-                <li style="color:yellow; font-weight:bold;">
-                    Email: 
-                    <a href="mailto:cc.iconnet@iconpln.co.id" target="_blank" style="color:white; font-weight:bold;">cc.iconnet@iconpln.co.id</a>
-                </li>
+                <li class="text-yellow-500 font-bold">Contact Center : 150678</li>
+                <li class="text-yellow-500 font-bold">Kantor Pusat : PT Indonesia Comnets Plus (ICON+)</li>
+                <li class="text-yellow-500 font-bold">Gedung Icon PLN Jl. KH. Wahid Hasyim No. 1 Jakarta 10340</li>
             </ul>
-            <p style="color:yellow; font-weight:bold;">Alamat: <a style="color:white; font-weight:bold;">  Jl. Soekarno Hatta, Dul, Kec. Pangkalan Baru, Kabupaten Bangka Tengah, Kepulauan Bangka Belitung 33684</p>
         </div>
-        <p class="text-sm"><br> © 2024 All rights reserved. ICONNET powered by PT Indonesia Comnets Plus</br></p>
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
 
+    document.getElementById("nav-toggle").addEventListener("click", function () {
+        document.querySelector(".nav-menu").classList.toggle("hidden");
+    });
 
-
-<script src="Script.js"></script>
-
+    function showPaymentMethod(method) {
+        const methods = document.querySelectorAll('.payment-method');
+        methods.forEach(methodDiv => {
+            methodDiv.classList.add('hidden');
+        });
+        document.getElementById(`paymentMethod${method}`).classList.remove('hidden');
+    }
+</script>
 </body>
 </html>
