@@ -22791,3 +22791,15 @@ body {
 .hidden {
     display: none;
 }
+.nav-menu.hidden {
+    display: none;
+}
+.payment-method.hidden {
+    display: none;
+}
+.payment-card {
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
