@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logotab.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
 </head>
 <body class="bg-gray-100">
 <nav class="bg-blue-900 shadow-lg fixed w-full z-10 fade-in">
@@ -16,7 +17,6 @@
             <a href="index.html" class="flex items-center">
                 <img src="img/navimg.png" alt="Logo" class="h-10 w-auto">
             </a>
-            
             <div class="block md:hidden">
                 <button id="nav-toggle" class="focus:outline-none">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -24,44 +24,41 @@
                     </svg>
                 </button>
             </div>
-            
             <div class="hidden md:flex md:space-x-4" data-aos="fade-left" data-aos-duration="500">
                 <a href="index.html" class="text-white font-semibold hover:text-gray-200">Home</a>
-                <span class="text-white">|</span> 
-                <a href="index4.html" class="text-white font-semibold hover:text-gray-200">Promo</a> 
-                <span class="text-white">|</span> 
-                <a href="index2.html" class="text-white font-semibold hover:text-gray-200">Syarat & Ketentuan</a> 
-                <span class="text-white">|</span> 
-                <a href="index3.html" class="text-white font-semibold hover:text-gray-200">Metode Pembayaran</a> 
-                <span class="text-white">|</span> 
-                <a href="index5.html" class="text-white font-semibold hover:text-gray-200">Karir</a> 
+                <span class="text-white">|</span>
+                <a href="index4.html" class="text-white font-semibold hover:text-gray-200">Promo</a>
+                <span class="text-white">|</span>
+                <a href="index2.html" class="text-white font-semibold hover:text-gray-200">Syarat & Ketentuan</a>
+                <span class="text-white">|</span>
+                <a href="index3.html" class="text-white font-semibold hover:text-gray-200">Metode Pembayaran</a>
+                <span class="text-white">|</span>
+                <a href="index5.html" class="text-white font-semibold hover:text-gray-200">Karir</a>
             </div>
         </div>
     </div>
-    
     <div class="md:hidden bg-blue-500">
-        <div class="max-w-7xl mx-auto px-4 py-2 nav-menu hidden"> 
-            <a href="index.html" class="block text-white font-semibold hover:text-gray-200 py-2">Home</a> 
-            <a href="index4.html" class="block text-white font-semibold hover:text-gray-200 py-2">Promo</a> 
-            <a href="index2.html" class="block text-white font-semibold hover:text-gray-200 py-2">Syarat & Ketentuan</a> 
+        <div class="max-w-7xl mx-auto px-4 py-2 nav-menu hidden">
+            <a href="index.html" class="block text-white font-semibold hover:text-gray-200 py-2">Home</a>
+            <a href="index4.html" class="block text-white font-semibold hover:text-gray-200 py-2">Promo</a>
+            <a href="index2.html" class="block text-white font-semibold hover:text-gray-200 py-2">Syarat & Ketentuan</a>
             <a href="index3.html" class="block text-white font-semibold hover:text-gray-200 py-2">Metode Pembayaran</a>
-            <a href="index5.html" class="block text-white font-semibold hover:text-gray-200 py-2">Karir</a>  
+            <a href="index5.html" class="block text-white font-semibold hover:text-gray-200 py-2">Karir</a>
         </div>
     </div>
 </nav>
 
 <section class="relative pt-16">
     <div>
-        <img src="img/metode.jpg" alt="Iconnet Logo">
-    </div>   
-    <section id="metodePembayaran" class="container mx-auto my-8">
+        <img src="img/metode.jpg" alt="Iconnet Logo" data-aos="fade-wide" data-aos-duration="500">>
+    </div>
+    <section id="metodePembayaran" class="container mx-auto my-8" data-aos="fade-left" data-aos-duration="500"></section>>
         <div class="flex flex-wrap space-x-4">
             <div class="flex flex-wrap space-x-4">
                 <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(1)">
                     <img src="img/Logo Alfamart.png" alt="Alfamart" class="h-10 w-auto mb-1">
                     Alfamart
                 </button>
-                
                 <button class="bg-transparent text-black-500 px-4 py-2 rounded-md w-32 h-20 sm:w-32 sm:h-20 flex flex-col items-center justify-center" onclick="showPaymentMethod(2)">
                     <img src="img/indomaret.png" alt="Indomart" class="h-10 w-auto mb-1">
                     Indomart
@@ -89,20 +86,184 @@
             </div>
         </div>
     </section>
-
     <div id="paymentMethodsContainer" class="mt-4">
         <div id="paymentMethod1" class="payment-method hidden">
             <div class="payment-card">
-                <h3>Pembayaran melalui Alfamart</h3>
-                <p>1. Datang di gerai Alfamart terdekat</p>
-                <p>2. Info kasir untuk pembayaran DOKU ICONNet</p>
-                <p>3. Info kasir NO Pembayaran, Contoh : 111113000000001</p>
-                <p>4. Pembayaran : sesuai dengan jumlah pemesanan</p>
-                <p>5. Transaksi Selesai</p>
-                <p>6. Simpan Struk Pembayaran</p>
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Alfamart</h3>
+                <li>Datang di gerai Alfamart terdekat</li>
+                <li>kasir untuk pembayaran DOKU ICONNet</li>
+                <li>Info kasir NO Pembayaran, Contoh : 111113000000001</li>
+                <li>Pembayaran : sesuai dengan jumlah pemesanan</li>
+                <li>Transaksi Selesai</li>
+                <li>Simpan Struk Pembayaran</li>
             </div>
         </div>
-        <!-- Other payment methods ... -->
+        <div id="paymentMethod2" class="payment-method hidden">
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Indomaret</h3>
+                <li>Datang ke gerai Indomaret terdekat</li>
+                <li>Info kasir untuk pembayaran Stroomnet</li>
+                <li>Info kasir kode indomaret 88267001 diikuti 8 digit Kode Pembayaran Contoh : 8826700110021136</li>
+                <li>Pembayaran sesuai dengan jumlah tagihan ditambah dengan biaya Rp 6.450,-</li>
+                <li>Transaksi Selesai</li>
+                <li>Simpan Struk Pembayarann</li>
+            </div>
+        </div>
+        <div id="paymentMethod3" class="payment-method hidden">
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui mandiri atm</h3>
+                <li>Masukkan kartu ATM dan PIN</li>
+                <li>Pilih menu Bayar/Beli </li>
+                <li>Pilih Lainnya</li>
+                <li>Pilih Multi Payment</li>
+                <li>Masukkan kode perusahaan</li>
+                <li>Masukkan kode pelanggan</li>
+                <li>Transaksi selesai</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui mandiri online</h3>
+                <li>Buka aplikasi mandiri online di handphone atau PC</li>
+                <li>Masukkan user id dan pin di halaman log in</li>
+                <li>Pilih menu BAYAR -> BUAT PEMBAYARAN BARU</li>
+                <li>Pilih menu INTERNET -> ICONNET/89450</li>
+                <li>Pilih Rekening Sumber</li>
+                <li>Masukkan NO VA</li>
+                <li>Tekan Lanjut</li>
+                <li>Tekan KONFIRMASI</li>
+                <li>Masukkan MPIN Banking kemudian tekan OK</li>
+                <li>Transaksi Selesai</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui mandiri cabang</h3>
+                <li>Datang ke Cabang Bank Mandiri</li>
+                <li>Isi slip setoran atau pindah buku, Langkah Pengisian Aplikasi Setoran / Transfer</li>
+                <li>Isi Tanggal, Nama & Alamat Pembayar</li>
+                <li>Isi penerima dengan kode 89450</li>
+                <li>Isi No.Rekening dengan NO VA</li>
+                <li>Isi Jumlah Setoran & Terbilang</li>
+                <li>Isi Tujuan Transaksi. Misal: PEMBAYARAN XXXX</li>
+                <li>ntarkan slip setoran ke teller</li>
+                <li>Teller akan memproses & mencetak bukti pembayaran</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui MCM / MIB</h3>
+                <li>Buka aplikasi MCM / MIB</li>
+                <li>Masukkan company id, user id dan password</li>
+                <li>Pilih menu PEMBAYARAN -> PEMBAYARAN TAGIHAN</li>
+                <li>Pilih rekening debet</li>
+                <li>Pilih KATEGORI INSTITUSI (89450/ICONNET)</li>
+                <li>Masukkan NO VA</li>
+                <li>Tekan LANJUT -> KONFIRMASI</li>
+                <li>Approve transaksi dengan memasukkan pin dinamis token</li>
+                <li>Transaksi selesai</li>
+            </div>
+        </div>
+        <div id="paymentMethod4" class="payment-method hidden">
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui BRI ATM</h3>
+                <li>Masukkan kartu ATM dan PIN</li>
+                <li>Pilih menu Bayar/Beli</li>
+                <li>Pilih Lainnya</li>
+                <li>Pilih Multi Payment</li>
+                <li>Masukkan kode perusahaan</li>
+                <li>Masukkan kode pelanggan</li>
+                <li>Transaksi selesai</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Mobile Banking BRI</h3>
+                <li>Buka aplikasi BRI Mobile</li>
+                <li>Pilih menu Mobile Banking BRI -> PEMBAYARAN -> BRIVA</li>
+                <li>Masukkan Nomor Virtual Account</li>
+                <li>Masukkan Jumlah Pembayaran</li>
+                <li>Masukkan PIN</li>
+                <li>Transaksi Selesai. Simpan notifikasi SMS sebagai bukti pembayaran</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Internet Banking BRI</h3>
+                <li>Login pada alamat Internet Banking BRI (https://ib.bri.co.id/ib-bri/Login.html)</li>
+                <li>Pilih menu Pembayaran Tagihan > Pembayaran > BRIVA</li>
+                <li>Masukkan Nomor Virtual Account</li>
+                <li>Di halaman konfirmasi, pastikan detil pembayaran sudah sesuai seperti Nomor BRIVA, Nama Pelanggan dan Jumlah Pembayaran</li>
+                <li>Masukkan password dan mToken</li>
+                <li>Transaksi Selesai</li>
+                <li>Simpan Struk Pembayaran</li>
+            </div>
+        </div>
+        <div id="paymentMethod5" class="payment-method hidden">
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui BCA ATM</h3>
+                <li>Masukkan kartu ATM dan PIN</li>
+                <li>Pilih menu Bayar/Beli</li>
+                <li>Pilih Lainnya</li>
+                <li>Pilih Multi Payment</li>
+                <li>Masukkan kode perusahaan</li>
+                <li>Masukkan kode pelanggan</li>
+                <li>Transaksi selesai</li>
+            </div>
+        </div>
+        <div id="paymentMethod6" class="payment-method hidden">
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui BNI ATM</h3>
+                <li>Masukkan kartu ATM dan PIN</li>
+                <li>Pilih menu Bayar/Beli</li>
+                <li>Pilih Lainnya</li>
+                <li>Pilih Multi Payment</li>
+                <li>Masukkan kode perusahaan</li>
+                <li>Masukkan kode pelanggan</li>
+                <li>Transaksi selesai</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Internet Banking BNI</h3>
+                <li>Login pada alamat Internet Banking BNI (https://ibank.bni.co.id)</li>
+                <li>Pilih menu Transfer > Virtual Account Billing > BNIVA</li>
+                <li>Masukkan Nomor Virtual Account</li>
+                <li>Di halaman KONFIRMASI, pastikan detil pembayaran sudah sesuai seperti Nomor BNIVA, Nama Pelanggan dan Jumlah Pembayaran</li>
+                <li>Masukkan password dan mToken</li>
+                <li>Transaksi Selesai</li>
+                <li>Simpan Struk Pembayaran</li>
+            </div> 
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Mobile Banking BNI</h3>
+                <li>Buka aplikasi BNI Mobile</li>
+                <li>Pilih menu Transfer -> Virtual Account Billing -> BNIVA</li>
+                <li>Masukkan Nomor Virtual Account</li>
+                <li>Masukkan PIN</li>
+                <li>Transaksi Selesai, Simpan notifikasi SMS sebagai bukti pembayaran</li>
+            </div>     
+        </div>
+        <div id="paymentMethod7" class="payment-method hidden">
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Sumsel Babel ATM</h3>
+                <li>Masukkan kartu ATM dan PIN</li>
+                <li>Pilih menu Bayar/Beli</li>
+                <li>Pilih Lainnya</li>
+                <li>Pilih Multi Payment</li>
+                <li>Masukkan kode perusahaan</li>
+                <li>Masukkan kode pelanggan</li>
+                <li>Transaksi selesai</li>
+            </div>
+            <div class="payment-card">
+                <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui Internet Banking</H3>
+                    <li>Login</li>
+                    <li>Transfer</li>
+                    <li>Pilih virtual Account</li>
+                    <li>Masukkan nomor VA/ID Pelanggan (disertai kode provider)</li>
+                    <li>Pastikan tagihan dan keterangan sesuai</li>
+                    <li>Masukkan OTP dan MPIN</li>
+                    <li>Selesai.</li>
+                <div class="payment-card">
+                 <h3 style="color:darkblue; font-weight:bold;">Pembayaran melalui ATM</H3>
+                    <li>Login</li>
+                    <li>Pilih lainnya</li>
+                    <li>Transfer</li>
+                    <li>Ke Virtual Account</li>
+                    <li>Pilih jenis rekening</li>
+                    <li>Masukkan nomor VA/ID Pelanggan (disertai kode provider)</li>
+                    <li>Pastikan tagihan dan keterangan sesuai</li>
+                    <li>Selesai</li>
+     
+             </div>    
+        </div>
     </div>
 </section>
 
@@ -110,24 +271,29 @@
     <div class="container mx-auto flex flex-col items-center justify-center">
         <img src="img/navimg.png" alt="Logo" class="w-20 mb-2">
         <div class="contact-info">
-            <h2 class="text-yellow-500 font-bold">Pelayanan pelanggan dan informasi lebih lanjut dapat menghubungi CC ICONNET berikut:</h2>
+           <h2 style="color:yellow; font-weight:bold;">Pelayanan pelanggan dan informasi lebih lanjut dapat menghubungi CC ICONNET berikut:</h2>
+
             <ul>
-                <li class="text-yellow-500 font-bold">Aplikasi My ICON+: 
-                    <a href="https://www.apple.com/app-store/" target="_blank" class="text-white font-bold">Download melalui Appstore /</a> 
-                    <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer" target="_blank" class="text-white font-bold">Playstore</a>
+                <li style="color:yellow; font-weight:bold;">Aplikasi My ICON+: 
+                    <a href="https://www.apple.com/app-store/" target="_blank" style="color:white; font-weight:bold;">Download melalui Appstore /</a> 
+                    <a href="https://play.google.com/store/apps/details?id=id.co.iconpln.icrm.customer" target="_blank" style="color:white; font-weight:bold;">Playstore</a>
                 </li>
-                <li class="text-yellow-500 font-bold">
+                <li style="color:yellow; font-weight:bold;">
                     Website: 
-                    <a href="https://iconnet.id/" target="_blank" class="text-white font-bold">https://iconnet.id/</a>
+                    <a href="https://iconnet.id/" target="_blank" style="color:white; font-weight:bold;">https://iconnet.id</a>
                 </li>
-                <li class="text-yellow-500 font-bold">Email: 
-                    <a href="mailto:customercare@iconpln.co.id" class="text-white font-bold">customercare@iconpln.co.id</a>
+                <li style="color:yellow; font-weight:bold;">
+                    Instagram: 
+                    <a href="https://www.instagram.com/iconnet.here" target="_blank" style="color:white; font-weight:bold;">@iconnet.here</a>
                 </li>
-                <li class="text-yellow-500 font-bold">Contact Center : 150678</li>
-                <li class="text-yellow-500 font-bold">Kantor Pusat : PT Indonesia Comnets Plus (ICON+)</li>
-                <li class="text-yellow-500 font-bold">Gedung Icon PLN Jl. KH. Wahid Hasyim No. 1 Jakarta 10340</li>
+                <li style="color:yellow; font-weight:bold;">
+                    Email: 
+                    <a href="mailto:cc.iconnet@iconpln.co.id" target="_blank" style="color:white; font-weight:bold;">cc.iconnet@iconpln.co.id</a>
+                </li>
             </ul>
+            <p style="color:yellow; font-weight:bold;">Alamat: <a style="color:white; font-weight:bold;">  Jl. Soekarno Hatta, Dul, Kec. Pangkalan Baru, Kabupaten Bangka Tengah, Kepulauan Bangka Belitung 33684</p>
         </div>
+        <p class="text-sm"><br> © 2024 All rights reserved. ICONNET powered by PT Indonesia Comnets Plus</br></p>
     </div>
 </footer>
 
@@ -135,17 +301,18 @@
 <script>
     AOS.init();
 
-    document.getElementById("nav-toggle").addEventListener("click", function () {
-        document.querySelector(".nav-menu").classList.toggle("hidden");
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('hidden');
     });
 
-    function showPaymentMethod(method) {
-        const methods = document.querySelectorAll('.payment-method');
-        methods.forEach(methodDiv => {
-            methodDiv.classList.add('hidden');
-        });
-        document.getElementById(`paymentMethod${method}`).classList.remove('hidden');
+    function showPaymentMethod(methodNumber) {
+        const paymentMethods = document.querySelectorAll('.payment-method');
+        paymentMethods.forEach(method => method.classList.add('hidden'));
+        document.getElementById('paymentMethod' + methodNumber).classList.remove('hidden');
     }
-<script src="script.js"></script>
+</script>
 </body>
 </html>
