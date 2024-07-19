@@ -7,20 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="img/logotab.png">
-</head>
-<head>
-    <!-- Other head elements -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Your content here -->
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
-  
+
+</head>
 <body class="bg-gray-100">
 <nav class="bg-blue-900 shadow-lg fixed w-full z-10 fade-in">
     <div class="max-w-7xl mx-auto px-4">
@@ -28,7 +17,6 @@
             <a href="index.html" class="flex items-center">
                 <img src="img/navimg.png" alt="Logo" class="h-10 w-auto">
             </a>
-            
             <div class="block md:hidden">
                 <button id="nav-toggle" class="focus:outline-none">
                     <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -94,7 +82,7 @@
                     </table>
                 </div>
             </div>
-            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+            <div class="bg-white rounded-lg shadow-md overflow-hidden" data-aos="fade-wide" data-aos-duration="500">
                 <img src="img/reguler.jpg" alt="Paket Reguler" class="w-full h-auto">
                 <div class="p-4">
                     <table class="min-w-full bg-white rounded-lg shadow-md">
@@ -123,7 +111,7 @@
         </div>
     </div>
 </section>
-<footer class="bg-gray-800 text-white py-4 mt-10">
+<footer class="bg-gray-800 text-white py-4 mt-10" data-aos="fade-wide" data-aos-duration="500">
     <div class="container mx-auto flex flex-col items-center justify-center">
         <img src="img/navimg.png" alt="Logo" class="w-20 mb-2">
         <div class="contact-info">
@@ -154,11 +142,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
         AOS.init();
-        document.getElementById('nav-toggle').addEventListener('click', function() {
-            var menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+    
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+    
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('hidden');
         });
+    
+        function showPaymentMethod(methodNumber) {
+            const paymentMethods = document.querySelectorAll('.payment-method');
+            paymentMethods.forEach(method => method.classList.add('hidden'));
+            document.getElementById('paymentMethod' + methodNumber).classList.remove('hidden');
+        }
     </script>
     </body>
     </html>
-    
